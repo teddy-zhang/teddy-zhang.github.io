@@ -6,9 +6,10 @@
 <style>
 body
 {
-	background-image:url("Background pattern.png");
-	background-repeat: space;
-	
+	background-image:url("bkgndrotated.png");
+  background-position:0px 1000px;
+  background-repeat: space;
+  background-color: #C1DAE9;
 }
 ::-webkit-scrollbar
 {
@@ -16,7 +17,7 @@ body
 }
 ul
 {
-	list-style-type: none;
+  list-style-type: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -25,6 +26,12 @@ ul
 	padding: 0;
 	background-color: #000000;
 	z-index: 1;
+  transition: 0.5s;
+  opacity: 0;
+}
+ul:hover
+{
+  opacity: 1;
 }
 li
 {
@@ -38,7 +45,6 @@ li a, .dropbtn
 	text-align: center;
 	text-decoration: none;
 }
-
 li a:hover, .dropdown:hover .dropbtn
 {
 	background-color: #333333;
@@ -84,14 +90,13 @@ li.dropdown
 }
 #welcome
 {
-	display: inline-block;
+	display: block;
 	text-align: center;
 	font-size: 700%;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
 	transition: 0.5s;
-	margin-bottom: 10px;
 }
 #name
 {
@@ -134,6 +139,5 @@ li.dropdown
 <h1 id = "welcome">WELCOME</h1>
 <img id = "name" src = "Signature.png">
 </div>
-<p style = "margin-top:55.2%;visibility:hidden;">placeholder</p>
 </body>
 </html>
