@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy reeds!</title>
+<style>
+body
+{
+	font-family: helvetica;
+}
+::-webkit-scrollbar
+{
+	width: 0 !important
+}
+ul
+{
+	list-style-type: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+}
+li
+{
+	float: left;
+}
+li a, .dropbtn
+{
+	display: inline-block;
+	padding: 16px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn
+{
+	background-color: #333333;
+}
+li.dropdown
+{
+	display: inline-block;
+}
+.dropdown-content
+{
+	display: none;
+	position: absolute;
+	background-color: #f4f4f4;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 8px rbga(0, 0, 0, 0.5);
+	z-index: 1;
+}
+.dropdown-content a
+{
+	color: black;
+	padding: 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover
+{
+	background-color: #999999;
+}
+.dropdown:hover .dropdown-content
+{
+	display: block;
+}
+
+form.paypal
+{
+	text-align: center;
+}
+a.info
+{
+	display: block;
+	background-color: #f4f4f4;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0;
+	width: 350px;
+	padding: 18px;
+	transition: 0.2s;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: 600;
+	color: black;
+	font-family: arial;
+}
+a.info:hover
+{
+	background-color: #999999;
+}
+</style>
+</head>
+<body>
+<ul>
+	<li><a href = "index.htm">Home</a></li>
+	<li><a href = "music.htm">Music</a></li>
+	<li class = "dropdown">
+		<a href = "reeds.htm" class = "dropbtn">Buy Bassoon Reeds!</a>
+		<div class = "dropdown-content">
+			<a href = "reeds.htm">How to purchase</a>
+			<a href = "reedinfo.htm">More info</a>
+		</div>
+	</li>
+	<li style = "float:right"><a href = "contact.htm">Contact Me</a></li>
+	<li style = "float:right"><a href = "socials.htm">Socials</a></li>
+</ul>
+<br>
+<h1 style = "text-align:center;font-size:700%;">BUY REEDS!</h1>
+
+<h2 style = "text-align:center;">High quality reeds for a only $15 each.</h2>
+<p style = "text-align:center;"><i>In person delivery available in Salem, OR</i></p>
+<br>
+<br>
+<br>
+<h1 style = "text-align:center;">
+	HOW TO BUY
+</h1>
+<p style = "text-align:center;">
+	Send an email at <b>teddyaolinezhang@gmail.com</b> that contains: <br>name, <br> number of reeds, <br> delivery method (pick-up location or delivery address), <br> questions
+	<br>
+	<br>
+	Then, send payment through PayPal:
+	<br>
+</p>
+
+<form class = "paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHRwYJKoZIhvcNAQcEoIIHODCCBzQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYANjeHD3wOr8uPkFP71lG66/yV3CJEzALwbMs50LIjdYMLtzz/ko1bjq52fnFrqpYggVMhRWJKI2xiFd7/eOxx7i21BfiUMYDaz0O6iREII2rArNXMNJNbQ7Gr5t7R9cWqxhNJy5rK8AdKtE83oWQjQl+OR7drEzvGpXBYJBONx4zELMAkGBSsOAwIaBQAwgcQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIw+R4jGf+zMiAgaBJhY/uKeYEkul13YhJrPWXief2giwxjao9dtfg+2QJzolyXQofoJikeNPyS03F5J5DSNMk2Jhsx5vlVDtNkT1ltcNygPpql/smg4cDSsTJKW52BJ/70AOwYC4bzeYDR2OMb8jf643v5psm3ljLoXzr3RXbu1GSC7vEfzxAjXunihGqWzcQx8EP7NZUHovGIk4+Xy0J7RxLbH4hCILXcZlIoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTkwODA5MTkxNzEzWjAjBgkqhkiG9w0BCQQxFgQUwu3dtcetbrnNkyi9rvMwSTCtd/AwDQYJKoZIhvcNAQEBBQAEgYBnWZgAQyAo6RnfXqXI7iae4a97/BsRpdP56pqDEjQtjX4/seHBDt+q2u39VcEAvA5F9ypKVO1o36s88mXeXJsSDJaPMNea1i936r8AkAQ/VUEzVGJoarz5jPklqdtEk/5k3X43FgxUlk3A5TUkpsN7Bz9rvMnzyh3rCdnXRAOEdg==-----END PKCS7-----">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+<br>
+<br>
+<br>
+<a class = "info" href = "reedinfo.htm">More about my reeds</a>
+</body>
+</html>
