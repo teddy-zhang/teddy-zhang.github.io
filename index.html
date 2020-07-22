@@ -77,6 +77,7 @@ li.dropdown
 .dropdown:hover .dropdown-content
 {
 	display: block;
+  transition: 0.5s;
 }
 .left
 {
@@ -88,14 +89,36 @@ li.dropdown
 	position: relative;
 	left: -50%;
 }
+.menuicon
+{
+  width: 35px;
+  height: 3px;
+  background-color: #999999;
+  margin: 8px 0;
+}
+.menuicon:hover
+{
+		/*background-color: #333333;*/
+}
+#menuicon
+{
+  float: right;
+	margin: -0.2% 1%;
+	opacity: 1;
+	transition: 0.5s;
+}
+#menuicon:hover
+{
+	background-color: #333333;
+}
 #welcome
 {
-	display: block;
+	display: inline-block;
 	text-align: center;
 	font-size: 700%;
 	position: relative;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-50%) translateY(75%);
 	transition: 0.5s;
 }
 #name
@@ -105,6 +128,7 @@ li.dropdown
  	margin-left: auto;
   	margin-right: auto;
 	opacity: 0;
+  transform: translateY(200%);
 	transition: 0.5s;
 }
 #welcome:hover
@@ -133,6 +157,11 @@ li.dropdown
 		<li style = "float:right"><a href = "contact.html">Contact Me</a></li>
 		<li style = "float:right"><a href = "socials.html">Socials</a></li>
 	</ul>
+</div>
+<div id = "menuicon" >
+  <div class = "menuicon"></div>
+  <div class = "menuicon"></div>
+  <div class = "menuicon"></div>
 </div>
 <br>
 <div id = "main">
