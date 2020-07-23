@@ -1,0 +1,22 @@
+.menuicon
+{
+  width: 35px;
+  height: 3px;
+  background-color: #999999;
+  margin: 8px 0;
+}
+.menuicon:hover
+{
+    /*background-color: #333333;*/
+}
+#menuicon
+{
+  float: right;
+  margin: -0.2% 1%;
+  opacity: 1;
+  transition: 0.5s;
+}
+#menuicon:hover
+{
+  background-color: #333333;
+}
