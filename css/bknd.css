@@ -1,9 +1,7 @@
 body
 {
-  background-image: url("../img/bknd3.png");
-  background-repeat: space;
+/*  background-image: url("../img/bknd3.png");
+  background-repeat: space; */
   background-color: #C1DAE9;
-  background-position: 0px 0px;
   font-family: helvetica;
-  overflow: hidden;
 }
