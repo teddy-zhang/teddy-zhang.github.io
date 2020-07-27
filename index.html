@@ -11,28 +11,7 @@
 	{
 		width: 0 !important
 	}
-	.menuicon
-	{
-	  width: 35px;
-	  height: 3px;
-	  background-color: #999999;
-	  margin: 8px 0;
-	}
-	.menuicon:hover
-	{
-	    /*background-color: #333333;*/
-	}
-	#menuicon
-	{
-	  float: right;
-	  margin: -0.2% 1%;
-	  opacity: 1;
-	  transition: 0.5s;
-	}
-	#menuicon:hover
-	{
-	  background-color: #333333;
-	}
+
 	#welcome
 	{
 		display: inline-block;
@@ -65,7 +44,7 @@
 </head>
 <body>
 	<div>
-		<ul>
+		<ul id = "navBar">
 			<li><a href = "index.html">Home</a></li>
 			<li><a href = "music.html">Music</a></li>
 			<li class = "dropdown">
@@ -79,14 +58,11 @@
 			<li style = "float:right"><a href = "socials.html">Socials</a></li>
 		</ul>
 	</div>
-	<div id = "menuicon" >
-	  <div class = "menuicon"></div>
-	  <div class = "menuicon"></div>
-	  <div class = "menuicon"></div>
-	</div>
-	<div id = "main">
+	<img id = menuicon src = "img/menuicon.png">
 	<h1 id = "welcome">WELCOME</h1>
 	<img id = "name" src = "img/signature.png">
-	</div>
+
+	<script src = "js/navbar.js"></script>
+
 </body>
 </html>
