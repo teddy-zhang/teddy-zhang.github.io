@@ -1,8 +1,8 @@
 iframe
 {
-display: block;
+display: inline-block;
 padding: 1%;
-transition: 0.35s;
+/* transition: 0.10s; */
 width: 200px;
 height: 112.5px;
 }
@@ -30,3 +30,15 @@ height: 112.5px;
   background-color: #89b8d5;
 } */
 /* default size is width="560" height="315" */
+p
+{
+  display: inline-block;
+}
+#ompWeberCaption
+{
+  visibility: hidden;
+}
+#bozzaCaption
+{
+  visibility: hidden;
+}
