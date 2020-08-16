@@ -3,7 +3,7 @@
   list-style-type: none;
 	position: fixed;
 	top: 0;
-  left: 0;
+  left: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -11,13 +11,14 @@
 	background-color: #000000;
 	z-index: 1;
   visibility: visible;
+  transition: 0.5s;
 
 }
 /*ul:hover
 {
   opacity: 1;
 }*/
-li
+.leftSide
 {
 	float: left;
 }
@@ -62,4 +63,43 @@ li.dropdown
 {
 	display: block;
   transition: 0.5s;
+}
+.rightSide
+{
+  float: right;
+}
+#menuicon
+{
+  float: right;
+  display: block;
+  opacity: 1;
+  transition: 0.5s;
+  border: 0;
+  margin-top: .5%;
+  margin-right: .7%;
+  width: 3%;
+}
+/*#menuicon:hover
+{
+  background-color: #bbbbbb;
+}*/
+#menuIconLi
+{
+  width: 3%;
+}
+#menuIconLi:hover{
+  background-color: #999999;
+}
+#menuiconNavBar
+{
+  display: block;
+  float: right;
+  opacity: 1;
+  transition: 0.5s;
+  border: 0;
+  /* margin-top: 25%;
+  margin-right: 10%; */
+  margin: 25% 10%;
+  padding: 0;
+  width: 90%;
 }
