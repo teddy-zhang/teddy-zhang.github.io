@@ -1,50 +1,73 @@
 var ompWeber = document.getElementById("ompWeber");
 var ompWeberVid = document.getElementById("ompWeberVid");
-
 var onOMPHover = function(){
-  var startTime = new Date().getTime();
+  console.log("hover detected");
+  //var startTime = new Date().getTime();
   ompWeber.style.backgroundColor = "#89b8d5";
+  ompWeberVid.style.width = "560px";
+  ompWeberVid.style.height = "315px";
+  //UNECESSARY BC OF CSS TRANSITION
+  // var enlarge = function() {
+  //   console.log("enlarging");
+  //   var currTime = new Date().getTime();
+  //   var newWidth = (200 + ((currTime - startTime)/1000) * 900); //(curr-start)/1000 gives seconds
+  //   var newHeight = (112.5 + ((currTime - startTime)/1000) * 675);
+  //   ompWeberVid.style.width = newWidth + "px";
+  //   ompWeberVid.style.height = newHeight + "px";
+  //
+  //   if (newWidth < 560) {
+  //     console.log("reqanimationframe, width = " + newWidth + "height = " + newHeight);
+  //     window.requestAnimationFrame(enlarge);
+  //   }
+  //   else {
+  //     window.cancelAnimationFrame(enlarge);
+  //   }
+  //
+  // };
+  // enlarge();
+};
+var onOMPHoverOff = function(){
+  console.log("unhovered");
+  ompWeber.style.backgroundColor = "#C1DAE9";
+  ompWeberVid.style.width = "200px";
+  ompWeberVid.style.height = "112.5px";
+};
+ompWeber.addEventListener("mouseover", onOMPHover);
+ompWeber.addEventListener("mouseout", onOMPHoverOff);
 
-  var enlarge = function() {
-    var currTime = new Date().getTime();
-    var newWidth = (200 + ((currTime - startTime)/1000) * 90); //(curr-start)/1000 gives seconds
-    var newHeight = (112.5 + ((currTime - startTime)/1000) * 67.5);
-    ompWeberVid.style.width = newWidth;
-    ompWeberVid.style.height = newHeight;
-
-    if (newWidth < 560) {
-      window.requestAnimationFrame(enlarge);
-    }
-    else {
-      window.cancelAnimationFrame(enlarge);
-    }
-
-}
 
 
 var bozza = document.getElementById("bozza");
 var bozzaVid = document.getElementById("bozzaVid");
-
 var onBozzaHover = function(){
-  var startTime = new Date().getTime();
+  console.log("hover detected");
+  //var startTime = new Date().getTime();
   bozza.style.backgroundColor = "#89b8d5";
-
-  var enlarge = function() {
-    var currTime = new Date().getTime();
-    var newWidth = (200 + ((currTime - startTime)/1000) * 90); //(curr-start)/1000 gives seconds
-    var newHeight = (112.5 + ((currTime - startTime)/1000) * 67.5);
-    bozzaVid.style.width = newWidth;
-    bozzaVid.style.height = newHeight;
-
-    if (newWidth < 560) {
-      window.requestAnimationFrame(enlarge);
-    }
-    else {
-      window.cancelAnimationFrame(enlarge);
-    }
-
-}
-
-
-ompWeber.addEventListener(mouseover, "onOMPHover");
-bozza.addEventListener(mouseover, "onBozzaHover");
+  bozzaVid.style.width = "560px";
+  bozzaVid.style.height = "315px";
+  //UNECESSARY BC OF CSS TRANSITION
+  // var enlarge = function() {
+  //   var currTime = new Date().getTime();
+  //   var newWidth = (200 + ((currTime - startTime)/1000) * 900); //(curr-start)/1000 gives seconds
+  //   var newHeight = (112.5 + ((currTime - startTime)/1000) * 675);
+  //   bozzaVid.style.width = newWidth + "px";
+  //   bozzaVid.style.height = newHeight + "px";
+  //
+  //   if (newWidth < 560) {
+  //     window.requestAnimationFrame(enlarge);
+  //   }
+  //   else {
+  //     window.cancelAnimationFrame(enlarge);
+  //   }
+  //
+  // };
+  // enlarge();
+};
+var onBozzaHoverOff = function(){
+  console.log("unhovered");
+  bozza.style.backgroundColor = "#C1DAE9";
+  bozzaVid.style.width = "200px";
+  bozzaVid.style.height = "112.5px";
+};
+bozza.addEventListener("mouseenter", onBozzaHover);
+bozza.addEventListener("mouseout", onBozzaHoverOff);
