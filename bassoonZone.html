@@ -4,25 +4,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>music</title>
 	<link rel = "stylesheet" href = "css/bknd.css">
-	<link rel = "stylesheet" href = "css/menuicon.css">
+	<!-- <link rel = "stylesheet" href = "css/menuicon.css"> -->
 	<link rel = "stylesheet" href = "css/navbar.css">
+  <link rel = "stylesheet" href = "css/youtube.css">
 </head>
 <body>
-	<ul id = "navBar">
-		<li><a href = "index.html">Home</a></li>
-		<li class = "dropdown">
-			<a href = "music.html" class = "dropbtn">Music</a>
-			<div class = "dropdown-content">
-				<a href = "performances.html">Performances</a>
-				<a href = "bassoonZone.html">Bassoon Zone</a>
-				<a href = "reeds.html">Reeds</a>
-		</li>
-		<li style = "float:right"><a href = "contact.html">Contact Me</a></li>
-		<li style = "float:right"><a href = "socials.html">Socials</a></li>
-	</ul>
+  <ul id = "navBar">
+    <li class = "leftSide"><a href = "index.html">Home</a></li>
+    <li class = "leftSide dropdown">
+      <a href = "music.html" class = "dropbtn">Music</a>
+      <div class = "dropdown-content">
+        <a href = "performances.html">Performances</a>
+        <a href = "bassoonZone.html">Bassoon Zone</a>
+        <a href = "reeds.html">Reeds</a>
+    </li>
+    <li class = "rightSide" id = "menuIconLi">	<img id = menuiconWhite src = "img/menuiconwhite.png"> </li>
+    <li class = "rightSide"><a href = "contact.html">Contact Me</a></li>
+    <li class = "rightSide"><a href = "socials.html">Socials</a></li>
+
+  </ul>
   <img id = menuicon src = "img/menuicon.png">
+
+<br>
+  <div id = "andrewBrady">
+	   <iframe id = "andrewBradyVid" src="https://www.youtube-nocookie.com/embed/SiPqc8aP1fE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+     </iframe>
+     <p id = "andrewBradyCaption"><em>First episode of Bassoon Zone, with Andrew Brady.</em></p>
+  </div>
+  <div id = "billyShort">
+    <iframe id = "billyShortVid" src="https://www.youtube-nocookie.com/embed/UGOMgESVqXs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <p id = "billyShortCaption"><em>Second episode of Bassoon Zone, with Billy Short.</em></p>
+  </div>
 
 
   <script src = "js/navBar.js"></script>
+  <script src = "js/bassoonZone.js"></script>
+
 </body>
 </html>

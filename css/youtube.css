@@ -14,13 +14,17 @@ height: 112.5px;
 #ompWeber
 {
   width: 100%;
-  /* margin-top: 5%; */
+  margin-top: 2%;
 }
 /* #ompWeber:hover
 {
   width: 100%;
   background-color: #89b8d5;
 } */
+#ompWeberCaption
+{
+  visibility: hidden;
+}
 #bozza
 {
   width: 100%;
@@ -30,15 +34,28 @@ height: 112.5px;
   background-color: #89b8d5;
 } */
 /* default size is width="560" height="315" */
-p
-{
-  display: inline-block;
-}
-#ompWeberCaption
-{
-  visibility: hidden;
-}
 #bozzaCaption
 {
   visibility: hidden;
+}
+#andrewBrady
+{
+  width: 100%;
+  margin-top: 2%;
+}
+#andrewBradyCaption
+{
+  visibility: hidden;
+}
+#billyShort
+{
+  width: 100%;
+}
+#billyShortCaption
+{
+  visibility: hidden;
+}
+p
+{
+  display: inline-block;
 }

@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>music</title>
 	<link rel = "stylesheet" href = "css/bknd.css">
-	<link rel = "stylesheet" href = "css/menuicon.css">
+	<!-- <link rel = "stylesheet" href = "css/menuicon.css"> -->
 	<link rel = "stylesheet" href = "css/navbar.css">
 	<link rel = "stylesheet" href = "css/youtube.css">
 	<style>
@@ -18,20 +18,22 @@
 </head>
 
 <body>
-	<ul id = "navBar">
-		<li><a href = "index.html">Home</a></li>
-		<li class = "dropdown">
-			<a href = "music.html" class = "dropbtn">Music</a>
-			<div class = "dropdown-content">
-				<a href = "performances.html">Performances</a>
-				<a href = "bassoonZone.html">Bassoon Zone</a>
-				<a href = "reeds.html">Reeds</a>
-		</li>
-		<li style = "float:right"><a href = "contact.html">Contact Me</a></li>
-		<li style = "float:right"><a href = "socials.html">Socials</a></li>
-	</ul>
-  <img id = menuicon src = "img/menuicon.png">
+  <ul id = "navBar">
+    <li class = "leftSide"><a href = "index.html">Home</a></li>
+    <li class = "leftSide dropdown">
+      <a href = "music.html" class = "dropbtn">Music</a>
+      <div class = "dropdown-content">
+        <a href = "performances.html">Performances</a>
+        <a href = "bassoonZone.html">Bassoon Zone</a>
+        <a href = "reeds.html">Reeds</a>
+    </li>
+    <li class = "rightSide" id = "menuIconLi">	<img id = menuiconWhite src = "img/menuiconwhite.png"> </li>
+    <li class = "rightSide"><a href = "contact.html">Contact Me</a></li>
+    <li class = "rightSide"><a href = "socials.html">Socials</a></li>
 
+  </ul>
+  <img id = menuicon src = "img/menuicon.png">
+<br>
   <div id = "ompWeber">
 	   <iframe id = "ompWeberVid" src="https://www.youtube-nocookie.com/embed/maD3__fj6F4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      <p id = "ompWeberCaption"><em>2nd prize performance of the Weber Bassoon Concerto, mvt. 1, at the <br> Oregon Mozart Players Concerto Competition.</em></p>
@@ -41,7 +43,8 @@
     <p id = "bozzaCaption"><em>Performance of Bozza's Nocturne-Danse at Oregon State Solo competition.</em></p>
   </div>
 
-  <script src = "js/youtube.js"></script>
   <script src = "js/navBar.js"></script>
+  <script src = "js/performances.js"></script>
+
 </body>
 </html>
