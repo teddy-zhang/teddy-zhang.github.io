@@ -18,6 +18,8 @@ var onAndrewBradyHoverOff = function(){
 andrewBrady.addEventListener("mouseover", onAndrewBradyHover);
 andrewBrady.addEventListener("mouseout", onAndrewBradyHoverOff);
 
+
+
 var billyShort = document.getElementById("billyShort");
 var billyShortVid = document.getElementById("billyShortVid");
 var billyShortCaption = document.getElementById("billyShortCaption");
