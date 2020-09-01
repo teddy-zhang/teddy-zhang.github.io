@@ -2,7 +2,7 @@ table, td
 {
   /* border-bottom: 1px solid black; */
   border-collapse: collapse;
-  margin-top: 2.5%;
+  margin-top: 4.5vh;
 }
 table{
   width: 100%;
@@ -23,6 +23,7 @@ td a{
   line-height: 10vh;
   padding: 10vh;
 }
+
 /* .musicMenu
 {
   width: 100%:

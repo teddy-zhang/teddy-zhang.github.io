@@ -6,62 +6,7 @@
 	<link rel = "stylesheet" href = "css/bknd.css">
 	<!-- <link rel = "stylesheet" href = "css/menuicon.css"> -->
 	<link rel = "stylesheet" href = "css/navbar.css">
-	<style>
-	body
-	{
-		font-family: helvetica;
-	}
-	/* Not necessary if there isn't extra content below the page
-	::-webkit-scrollbar
-	{
-		width: 0 !important
-	} */
-	h1
-	{
-		display: inline-block;
-		text-align: center;
-		font-size: 700%;
-		position: relative;
-		left: 50%;
-		transform: translateX(-50%) translateY(75%);
-		transition: 0.5s;
-	}
-	form
-	{
-		text-align: center;
-	}
-	textarea
-	{
-		resize: none;
-		height: 100px;
-		width: 345px;
-	}
-	input, textarea
-	{
-		outline: none;
-		border: 1px groove;
-	}
-	input:focus, textarea:focus
-	{
-		box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-		border: 0;
-	}
-	input:hover, textarea:hover
-	{
-		background-color: #f4f4f4;
-	}
-	button
-	{
-		border: 0;
-		width: 350px;
-		padding: 18px;
-		transition: 0.2s;
-	}
-	button:hover
-	{
-		background-color: #999999;
-	}
-	</style>
+	<link rel= "stylesheet" href= "css/contact.css">
 </head>
 <body>
 	<ul id = "navBar">
@@ -75,7 +20,7 @@
 		</li>
 		<li class = "rightSide" id = "menuIconLi">	<img id = menuiconWhite src = "img/menuiconwhite.png"> </li>
 		<li class = "rightSide"><a href = "contact.html">Contact Me</a></li>
-		<li class = "rightSide"><a href = "socials.html">Socials</a></li>
+		<li class = "rightSide"><a href = "aboutMe.html">About Me</a></li>
 	</ul>
 
 	<img id = menuicon src = "img/menuicon.png">
@@ -85,12 +30,16 @@
 	<p style = "text-align:center"> this doesn't work yet don't type anything</p>
 
 	<form action = "contactform.php" name = "contactform" method = "post">
-		<input type = "text" name = "name" placeholder = "First and last name" required>
-		<input type = "email" name = "email" placeholder = "Email" required>
+		<div class = "shortAnswer">
+			<input type = "text" name = "name" placeholder = "First and last name" required>
+		<!-- </div>
+		<div class = "shortAnswer"> -->
+			<input type = "email" name = "email" placeholder = "Email" required>
+		</div>
 		<br>
 		<br>
 		<br>
-		<div>
+		<div class = "longAnswer">
 			<textarea name = "message" placeholder = "Write your message here" required></textarea>
 		</div>
 		<button type = "submit" name = "submit" style = "font-size:20px;font-weight:600">Send</button>

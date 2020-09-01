@@ -1,0 +1,67 @@
+body
+{
+  font-family: helvetica;
+}
+/* Not necessary if there isn't extra content below the page
+::-webkit-scrollbar
+{
+  width: 0 !important
+} */
+h1
+{
+  display: inline-block;
+  text-align: center;
+  font-size: 15vh;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%) translateY(75%);
+  transition: 0.5s;
+}
+form
+{
+  text-align: center;
+}
+input{
+  width: 100%;
+  display: inline-block;
+}
+textarea
+{
+  resize: none;
+  height: 100px;
+  width: 100%;
+}
+input, textarea
+{
+  outline: none;
+  border: 1px groove;
+
+}
+input:focus, textarea:focus
+{
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  border: 0;
+}
+input:hover, textarea:hover
+{
+  background-color: #f4f4f4;
+}
+button
+{
+  border: 0;
+  width: 50vh;
+  padding: 18px;
+  transition: 0.2s;
+}
+button:hover
+{
+  background-color: #999999;
+}
+.shortAnswer{
+  width: 25vh;
+  margin: auto;
+}
+.longAnswer{
+  width: 50vh;
+  margin: auto;
+}

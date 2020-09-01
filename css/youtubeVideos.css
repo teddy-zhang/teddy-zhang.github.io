@@ -14,7 +14,7 @@ height: 112.5px;
 #ompWeber
 {
   width: 100%;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
 /* #ompWeber:hover
 {
@@ -41,7 +41,7 @@ height: 112.5px;
 #andrewBrady
 {
   width: 100%;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
 #andrewBradyCaption
 {
@@ -54,6 +54,23 @@ height: 112.5px;
 #billyShortCaption
 {
   visibility: hidden;
+}
+.description{
+  text-align: center;
+  width: 100%;
+}
+.description a{
+  /* text-decoration: none; */
+  color: #000000;
+}
+.description a:hover{
+  color: #999999;
+}
+#bsnzoneYoutube{
+  margin-right: 1vh;
+}
+#bsnzoneFacebook{
+  margin-left: 1vh;
 }
 p
 {

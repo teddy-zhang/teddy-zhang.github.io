@@ -3,7 +3,7 @@ var andrewBradyVid = document.getElementById("andrewBradyVid");
 var andrewBradyCaption = document.getElementById("andrewBradyCaption");
 var onAndrewBradyHover = function(){
   console.log("hover detected");
-  andrewBrady.style.backgroundColor = "#89b8d5";
+  andrewBrady.style.backgroundColor = "#999999";
   andrewBradyVid.style.width = "560px";
   andrewBradyVid.style.height = "315px";
   andrewBradyCaption.style.visibility = "visible";
@@ -25,7 +25,7 @@ var billyShortVid = document.getElementById("billyShortVid");
 var billyShortCaption = document.getElementById("billyShortCaption");
 var onBillyShortHover = function(){
   console.log("hover detected");
-  billyShort.style.backgroundColor = "#89b8d5";
+  billyShort.style.backgroundColor = "#999999";
   billyShortVid.style.width = "560px";
   billyShortVid.style.height = "315px";
   billyShortCaption.style.visibility = "visible";

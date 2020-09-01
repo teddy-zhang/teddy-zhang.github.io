@@ -25,7 +25,7 @@
 li a, .dropbtn
 {
 	display: inline-block;
-	padding: 16px;
+	padding: 2vh;
 	color: white;
 	text-align: center;
 	text-decoration: none;
@@ -66,15 +66,15 @@ li.dropdown
 {
   float: right;
 }
-#menuicon
+#menuicon /*the menuicon behind the navbar and on navbar menuicon hover*/
 {
   float: right;
   display: block;
   opacity: 1;
   border: 0;
-  margin-top: .04%;
-  margin-right: .03%;
-  width: 40px;
+  margin-top: .5vh;
+  margin-right: 1vh;
+  width: 4.5vh;
   /* width: 2.7%; */
   visibility: hidden;
 }
@@ -82,15 +82,15 @@ li.dropdown
 {
   background-color: #bbbbbb;
 }*/
-#menuIconLi
+#menuIconLi /*the li that contains the menuicon*/
 {
   /* width: 42px; */
-  width: 3%;
+  width: 5vh;
 }
 /* #menuIconLi:hover{
   background-color: #333333;
 } */
-#menuiconWhite
+#menuiconWhite /*the white menuicon*/
 {
   display: block;
   float: right;
@@ -99,10 +99,10 @@ li.dropdown
   border: 0;
   /* margin-top: 25%;
   margin-right: 10%; */
-  margin: 25% 10%;
+  margin: 1.5vh .5vh;
   padding: 0;
   /* width: auto; */
   /* width: 40px; */
   /* object-fit: contain; */
-  width: 90%;
+  width: 4.5vh;
 }

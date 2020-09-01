@@ -4,7 +4,7 @@ var caption = document.getElementById("ompWeberCaption");
 var onOMPHover = function(){
   console.log("hover detected");
   //var startTime = new Date().getTime();
-  ompWeber.style.backgroundColor = "#89b8d5";
+  ompWeber.style.backgroundColor = "#999999";
   ompWeberVid.style.width = "560px";
   ompWeberVid.style.height = "315px";
   ompWeberCaption.style.visibility = "visible";
@@ -47,7 +47,7 @@ var caption = document.getElementById("bozzaCaption");
 var onBozzaHover = function(){
   console.log("hover detected");
   //var startTime = new Date().getTime();
-  bozza.style.backgroundColor = "#89b8d5";
+  bozza.style.backgroundColor = "#999999";
   bozzaVid.style.width = "560px";
   bozzaVid.style.height = "315px";
   bozzaCaption.style.visibility = "visible";
