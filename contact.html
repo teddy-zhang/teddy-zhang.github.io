@@ -25,20 +25,20 @@
 
 	<img id = menuicon src = "img/menuicon.png">
 
-	<h1>CONTACT ME</h1>
+	<br>
 
-	<p style = "text-align:center"> this doesn't work yet don't type anything</p>
+	<h1 class = "heading">CONTACT ME</h1>
+
+	<p> this doesn't work yet don't type anything</p>
 
 	<form action = "contactform.php" name = "contactform" method = "post">
 		<div class = "shortAnswer">
-			<input type = "text" name = "name" placeholder = "First and last name" required>
-		<!-- </div>
-		<div class = "shortAnswer"> -->
-			<input type = "email" name = "email" placeholder = "Email" required>
+			<input type = "text" name = "firstName" placeholder = "First name" required>
+			<input type = "text" name = "lastName" placeholder = "Last name" required>
 		</div>
-		<br>
-		<br>
-		<br>
+		<div class= "shortAnswer">
+			<input id = "email" type = "email" name = "email" placeholder = "Email" required>
+		</div>
 		<div class = "longAnswer">
 			<textarea name = "message" placeholder = "Write your message here" required></textarea>
 		</div>

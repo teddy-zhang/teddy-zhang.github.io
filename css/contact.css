@@ -7,7 +7,7 @@ body
 {
   width: 0 !important
 } */
-h1
+/* h1
 {
   display: inline-block;
   text-align: center;
@@ -16,25 +16,29 @@ h1
   left: 50%;
   transform: translateX(-50%) translateY(75%);
   transition: 0.5s;
-}
+} */
 form
 {
   text-align: center;
+  margin-top: 10vh;
 }
 input{
-  width: 100%;
-  display: inline-block;
+  /* width: 100%;
+  display: inline-block; */
+
 }
 textarea
 {
   resize: none;
   height: 100px;
-  width: 100%;
+  width: 50vh;
 }
 input, textarea
 {
   outline: none;
-  border: 1px groove;
+  /* border: 1px groove; */
+  border: none;
+  text-align: center;
 
 }
 input:focus, textarea:focus
@@ -49,7 +53,7 @@ input:hover, textarea:hover
 button
 {
   border: 0;
-  width: 50vh;
+  width: 50.5vh;
   padding: 18px;
   transition: 0.2s;
 }
@@ -58,10 +62,16 @@ button:hover
   background-color: #999999;
 }
 .shortAnswer{
+  /* width: 25vh; */
+  /* margin: auto; */
+  /* float: left; */
+  margin-bottom: 1vh;
+}
+#email{
   width: 25vh;
-  margin: auto;
 }
 .longAnswer{
-  width: 50vh;
-  margin: auto;
+  /* width: 50vh; */
+  /* margin: auto; */
+  margin-top: 3vh;
 }

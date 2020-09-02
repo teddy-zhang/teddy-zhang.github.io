@@ -5,6 +5,10 @@ body
   background-color: #C1DAE9;
   font-family: helvetica;
 }
+p{
+  text-align: center;
+  font-size: 2vh;
+}
 #welcome
 {
   display: inline-block;
@@ -33,7 +37,12 @@ body
 {
   opacity: 1;
 }
-#bassoonZoneHeading
+.heading{
+  font-size: 15vh;
+  transform: translateY(25%);
+  text-align: center;
+}
+/* #bassoonZoneHeading
 {
   font-size: 15vh;
   transform: translateY(25%);
@@ -48,4 +57,4 @@ body
   font-size: 15vh;
   transform: translateY(25%);
   text-align: center;
-}
+} */
