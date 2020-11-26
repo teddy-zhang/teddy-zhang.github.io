@@ -49,7 +49,7 @@ var onMenuIconLiHover = function(){
   document.getElementById("menuiconWhite").src = "img/menuicon.png";
 }
 var onMenuIconLiHoverOff = function(){
-  document.getElementById("menuiconWhite").src = "img/menuiconWhite.png";
+  document.getElementById("menuiconWhite").src = "img/menuiconwhite.png";
 }
 
 
