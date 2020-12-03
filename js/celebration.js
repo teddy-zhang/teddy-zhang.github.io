@@ -25,6 +25,14 @@ function setc(caps) {
   caption.innerHTML = caps;
   this.caps = caps;
 }
+function clearc(){
+  caption.style.display = "none";
+}
+function clearp(){
+  imgs1.style.display = "none";
+  imgs2.style.display = "none";
+  imgs3.style.display = "none";
+}
 
 //functions for images
 var imgs1 = document.getElementById("imgs1");
