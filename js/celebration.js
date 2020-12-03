@@ -170,6 +170,8 @@ async function main() {
   p2();
 
   sleeptime = (4000);
+  clearc();
+  clearp();
 
   await sleep(sleeptime);
   sett("Happy one year anniversary ❤️");
