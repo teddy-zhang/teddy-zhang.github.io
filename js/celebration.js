@@ -13,6 +13,7 @@ var words = "Hi";
 var caps = "how it all started";
 //function to reset text opacity
 function sett(words) {
+  text.style.display = "block";
   text.style.opacity = 0;
   text.innerHTML = words;
   this.words = words;
@@ -21,6 +22,7 @@ function cleart(){
   text.style.display = "none";
 }
 function setc(caps) {
+  caption.style.display = "block";
   caption.style.opacity = 0;
   caption.innerHTML = caps;
   this.caps = caps;
@@ -172,6 +174,10 @@ async function main() {
   sleeptime = (4000);
   clearc();
   clearp();
+
+  await sleep(sleeptime);
+  sett("Time flies when you're having fun ;)");
+  t();
 
   await sleep(sleeptime);
   sett("Happy one year anniversary ❤️");
