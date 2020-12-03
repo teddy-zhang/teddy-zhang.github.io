@@ -1,0 +1,36 @@
+#text{
+  opacity: 0;
+}
+#caption{
+  opacity: 0;
+  text-align: center;
+  margin-top: 10vh;
+}
+#clicktoreplay{
+  opacity: 0;
+}
+
+#imgs1, #imgs2, #imgs3{
+  text-align: center;
+}
+#imgs1{
+  display: none;
+  /* display: inline-block; */
+  opacity: 0;
+}
+#imgs2{
+  display: none;
+  /* display: inline-block; */
+  opacity: 0;
+}
+#imgs3{
+  display: none;
+  /* display: inline-block; */
+  opacity: 0;
+}
+img{
+  max-width: 25%;
+  display: inline-block;
+  /* opacity: 0; */
+  /* margin: auto; */
+}
