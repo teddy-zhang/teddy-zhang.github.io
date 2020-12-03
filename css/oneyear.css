@@ -1,0 +1,33 @@
+/* a{
+  background-color: #4CAF50;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  font-family: helvetica;
+  margin: auto;
+}
+a:hover{
+  background-color: #999999;
+} */
+
+.celebration{
+  background-color: #b3b3b3;
+  display: block;
+  margin: auto;
+  width: 10vw;
+  height: 5vh;
+  text-align: center;
+  line-height: 5vh;
+}
+.celebtration:hover{
+  transition: 0.3s;
+  background-color: #999999;
+}
+a, a:visited, a:hover, a:active{
+  text-decoration: none;
+  line-height: 5vh;
+  color: black;
+}
