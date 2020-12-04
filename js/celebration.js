@@ -75,6 +75,56 @@ function setimgs3(url1, url2, url3){
 
 //driver function
 async function main() {
+  setc("Loading");
+  c();
+
+  img1x1.src = "img/year/braid.jpeg";
+  img1x1.src = "img/year/dance1.jpeg";
+  img1x1.src = "img/year/dance2.jpeg";
+  img1x1.src = "img/year/dance3.jpeg";
+  img1x1.src = "img/year/dance4.jpeg";
+  img1x1.src = "img/year/dance5.jpeg";
+  img1x1.src = "img/year/dance6.jpeg";
+  img1x1.src = "img/year/dance7.jpeg";
+  img1x1.src = "img/year/dance8.jpeg";
+  await sleep(1000);
+  setc("Loading.");
+  caption.style.opacity = 1;
+  caption.innerHTML = caps;
+  img1x1.src = "img/year/dance9.jpeg";
+  img1x1.src = "img/year/dance10.jpeg";
+  img1x1.src = "img/year/dance11.jpeg";
+  img1x1.src = "img/year/dating.jpeg";
+  img1x1.src = "img/year/driving.jpeg";
+  img1x1.src = "img/year/fav.jpeg";
+  img1x1.src = "img/year/fb1.jpeg";
+  img1x1.src = "img/year/fb2.jpeg";
+  img1x1.src = "img/year/friendsoffelines.jpeg";
+  await sleep(500);
+  setc("Loading..");
+  caption.style.opacity = 1;
+  caption.innerHTML = caps;
+  img1x1.src = "img/year/hanging.jpeg";
+  img1x1.src = "img/year/minnie1.jpeg";
+  img1x1.src = "img/year/minnie2.jpeg";
+  img1x1.src = "img/year/minnie3.jpeg";
+  img1x1.src = "img/year/minnie4.jpeg";
+  img1x1.src = "img/year/minnie5.jpeg";
+  img1x1.src = "img/year/butcracker.jpeg";
+  img1x1.src = "img/year/quarantine1.jpeg";
+  img1x1.src = "img/year/quarantine2.jpeg";
+  await sleep(500);
+  setc("Loading...");
+  caption.style.opacity = 1;
+  caption.innerHTML = caps;
+  img1x1.src = "img/year/us.jpeg";
+  img1x1.src = "img/year/hoco.jpeg";
+  await sleep(2000);
+
+  clearc();
+
+  await sleep(1000);
+
   sett("Hi");
   t();
 
@@ -139,6 +189,12 @@ async function main() {
   setc("I don't like this one but you do");
   c();
   setimgs1("img/year/us.jpeg");
+  p1();
+
+  await sleep(sleeptime);
+  setc("driving around");
+  c();
+  setimgs1("img/year/driving.jpeg");
   p1();
 
   await sleep(sleeptime);
