@@ -3,8 +3,8 @@ function sleep(ms) {
   console.log("sleeping...");
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+
 var sleeptime = 4000;
-var imgsleeptime = 2000;
 var speed = 0.007;
 //getting the text elements
 var text = document.getElementById("text");
@@ -110,15 +110,13 @@ async function main() {
   img1x1.src = "img/year/minnie3.jpeg";
   img1x1.src = "img/year/minnie4.jpeg";
   img1x1.src = "img/year/minnie5.jpeg";
-  img1x1.src = "img/year/butcracker.jpeg";
-  img1x1.src = "img/year/quarantine1.jpeg";
-  img1x1.src = "img/year/quarantine2.jpeg";
+  img1x1.src = "img/year/nutcracker.jpeg";
+  img1x1.src = "img/year/us.jpeg";
+  img1x1.src = "img/year/hoco.jpeg";
   await sleep(500);
   setc("Loading...");
   caption.style.opacity = 1;
   caption.innerHTML = caps;
-  img1x1.src = "img/year/us.jpeg";
-  img1x1.src = "img/year/hoco.jpeg";
   await sleep(2000);
 
   clearc();
@@ -137,111 +135,117 @@ async function main() {
   t();
 
   await sleep(sleeptime);
-  sett("We've made\nlots of memories...");
+  sett("We've made\nlots of memories");
+  t();
+
+  await sleep(sleeptime);
+  sett("Thanks for a year of...");
   t();
 
   sleepttime = 3000;
 
   await sleep(sleeptime);
   cleart();
-  setc("how it all started");
+  setc("of flirting");
   c();
   setimgs2("img/year/walkingruby.jpeg", "img/year/friendsoffelines.jpeg");
   p2();
 
   await sleep(sleeptime);
-  setc("football games");
+  setc("of football games");
   c();
   setimgs2("img/year/fb1.jpeg", "img/year/fb2.jpeg");
   p2();
 
   await sleep(sleeptime);
-  setc("homecoming");
+  setc("of homecoming");
   c();
   setimgs1("img/year/hoco.jpeg");
   p1();
 
   await sleep(sleeptime);
-  setc("learning to braid");
-  c();
-  setimgs1("img/year/braid.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  setc("when we started dating");
+  setc("of dating");
   c();
   setimgs1("img/year/dating.jpeg");
   p1();
 
   await sleep(sleeptime);
-  setc("nutcracker");
+  setc("of learning to braid");
+  c();
+  setimgs1("img/year/braid.jpeg");
+  p1();
+
+  await sleep(sleeptime);
+  setc("of nutcracker");
   c();
   setimgs1("img/year/nutcracker.jpeg");
   p1();
 
   await sleep(sleeptime);
-  setc("my favorite picture");
+  setc("of my favorite picture");
   c();
   setimgs1("img/year/fav.jpeg");
   p1();
 
   await sleep(sleeptime);
-  setc("I don't like this one but you do");
+  setc("of my not favorite picture");
   c();
   setimgs1("img/year/us.jpeg");
   p1();
 
   await sleep(sleeptime);
-  setc("driving around");
+  setc("of driving around");
   c();
   setimgs1("img/year/driving.jpeg");
   p1();
 
   await sleep(sleeptime);
-  setc("getting ready for dance");
+  setc("of getting ready for dance");
   c();
   setimgs3("img/year/dance1.jpeg", "img/year/dance2.jpeg", "img/year/dance3.jpeg");
   p3();
-  await sleep(imgsleeptime);
+  await sleep(sleeptime);
   setimgs3("img/year/dance4.jpeg", "img/year/dance5.jpeg", "img/year/dance6.jpeg");
   p3();
-  await sleep(imgsleeptime);
+  await sleep(sleeptime);
   setimgs3("img/year/dance7.jpeg", "img/year/dance8.jpeg", "img/year/dance9.jpeg");
   p3();
-  await sleep(imgsleeptime);
+  await sleep(sleeptime);
   setimgs2("img/year/dance10.jpeg", "img/year/dance11.jpeg");
   p2();
 
   await sleep(sleeptime);
-  setc("hanging out");
+  setc("of hanging out");
   c();
   setimgs1("img/year/hanging.jpeg");
   p1();
 
 
   await sleep(sleeptime);
-  setc("minnie, of course");
+  setc("of Minnie");
   c();
   setimgs3("img/year/minnie1.jpeg", "img/year/minnie2.jpeg", "img/year/minnie3.jpeg");
   p3();
-  await sleep(imgsleeptime);
+  await sleep(sleeptime);
   setimgs2("img/year/minnie4.jpeg", "img/year/minnie5.jpeg");
   p2();
 
-  sleeptime = (4000);
+  await sleep(sleeptime);
+  setc("of Ruby, of course");
+  c();
+  setimgs2("img/year/ruby1.jpeg", "img/year/ruby2.jpeg");
+  p2();
 
   await sleep(sleeptime);
   clearc();
   clearp();
-  sett("Time flies when you're having fun ;)");
+
+  await sleep(2000);
+  sett("Happy one year anniversary");
   t();
 
-  await sleep(sleeptime);
-  sett("Happy one year anniversary baby");
-  t();
-
-  await sleep(sleeptime);
-  clicktoreplay();
+  await sleep(2000);
+  date();
 
 }
 
@@ -327,9 +331,9 @@ function p3(){
     }
 }
 
-function clicktoreplay(){
-  console.log("click to replay");
-  var clicktoreplay = document.getElementById("clicktoreplay");
+function date(){
+  console.log("date");
+  var date = document.getElementById("date");
   var op = 0;
   var id = setInterval(frame, 1);
   function frame() {
@@ -337,8 +341,8 @@ function clicktoreplay(){
       clearInterval(id);
     } else {
       op += 0.002;
-      clicktoreplay.style.opacity = op;
-      clicktoreplay.style.opacity = op;
+      date.style.opacity = op;
+      date.style.opacity = op;
     }
   }
 }
