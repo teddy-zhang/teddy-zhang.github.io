@@ -233,8 +233,8 @@ async function main() {
   await sleep(sleeptime);
   setc("of Ruby, of course");
   c();
-  setimgs2("img/year/ruby1.jpeg", "img/year/ruby2.jpeg");
-  p2();
+  setimgs1("img/year/ruby1.jpeg");
+  p1();
 
   await sleep(sleeptime);
   clearc();
