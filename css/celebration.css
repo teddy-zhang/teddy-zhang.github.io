@@ -18,19 +18,19 @@
   display: none;
   /* display: inline-block; */
   opacity: 0;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 #imgs2{
   display: none;
   /* display: inline-block; */
   opacity: 0;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 #imgs3{
   display: none;
   /* display: inline-block; */
   opacity: 0;
-  transform: translateY(-7%);
+  transform: translateY(-10%);
 }
 #imgs3 img{
   height: 38vh;
