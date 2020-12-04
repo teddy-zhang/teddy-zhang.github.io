@@ -7,7 +7,7 @@
 #caption{
   opacity: 0;
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 #clicktoreplay{
   opacity: 0;
@@ -18,13 +18,13 @@
   display: none;
   /* display: inline-block; */
   opacity: 0;
-  margin-top: 5vh;
+  margin-top: 10vh;
 }
 #imgs2{
   display: none;
   /* display: inline-block; */
   opacity: 0;
-  margin-top: 5vh;
+  margin-top: 10vh;
 }
 #imgs3{
   display: none;
