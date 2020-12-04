@@ -53,16 +53,16 @@ var img2src = "img/year/friendsoffelines.jpeg";
 var img3src = "img/year/walkingruby.jpeg";
 function setimgs1(url1){
   img1src = url1;
+  imgs1.style.opacity = 0;
   imgs2.style.display = "none";
   imgs3.style.display = "none";
-  imgs1.style.opacity = 0;
 }
 function setimgs2(url1, url2){
   img1src = url1;
   img2src = url2;
   imgs1.style.display = "none";
-  imgs3.style.display = "none";
   imgs2.style.opacity = 0;
+  imgs3.style.display = "none";
 }
 function setimgs3(url1, url2, url3){
   img1src = url1;
@@ -75,72 +75,73 @@ function setimgs3(url1, url2, url3){
 
 //driver function
 async function main() {
-  t();
-
-  await sleep(sleeptime);
-  sett("We've been dating for a year");
-  t();
-
-  await sleep(sleeptime);
-  sett("And I really like you");
-  t();
-
-  await sleep(sleeptime);
-  sett("Let's go through our year...");
-  t();
-
-  sleepttime = 3000;
-
-  await sleep(sleeptime);
+  // sett("Hi");
+  // t();
+  //
+  // await sleep(sleeptime);
+  // sett("We've been dating\nfor a year");
+  // t();
+  //
+  // await sleep(sleeptime);
+  // sett("I really like you");
+  // t();
+  //
+  // await sleep(sleeptime);
+  // sett("We've made a whole\nyear of memories...");
+  // t();
+  //
+  // sleepttime = 3000;
+  //
+  // await sleep(sleeptime);
   cleart();
-  setc("how it all started");
-  c();
-  setimgs2("img/year/walkingruby.jpeg", "img/year/friendsoffelines.jpeg");
-  p2();
-
-  await sleep(sleeptime);
-  setc("football games");
-  c();
-  setimgs2("img/year/fb1.jpeg", "img/year/fb2.jpeg");
-  p2();
-
-  await sleep(sleeptime);
-  setc("homecoming");
-  c();
-  setimgs1("img/year/hoco.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  setc("learning to braid");
-  c();
-  setimgs1("img/year/braid.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  setc("when we started dating");
-  c();
-  setimgs1("img/year/dating.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  setc("nutcracker");
-  c();
-  setimgs1("img/year/nutcracker.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  setc("my favorite picture");
-  c();
-  setimgs1("img/year/fav.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  setc("I don't like this one but you do");
-  c();
-  setimgs1("img/year/us.jpeg");
-  p1();
-
-  await sleep(sleeptime);
+  // setc("how it all started");
+  // c();
+  // setimgs2("img/year/walkingruby.jpeg", "img/year/friendsoffelines.jpeg");
+  // p2();
+  //
+  // await sleep(sleeptime);
+  // setc("football games");
+  // c();
+  // setimgs2("img/year/fb1.jpeg", "img/year/fb2.jpeg");
+  // p2();
+  //
+  // await sleep(sleeptime);
+  // setc("homecoming");
+  // c();
+  // setimgs1("img/year/hoco.jpeg");
+  // p1();
+  //
+  // await sleep(sleeptime);
+  // setc("learning to braid");
+  // c();
+  // setimgs1("img/year/braid.jpeg");
+  // p1();
+  //
+  // await sleep(sleeptime);
+  // setc("when we started dating");
+  // c();
+  // setimgs1("img/year/dating.jpeg");
+  // p1();
+  //
+  // await sleep(sleeptime);
+  // setc("nutcracker");
+  // c();
+  // setimgs1("img/year/nutcracker.jpeg");
+  // p1();
+  //
+  // await sleep(sleeptime);
+  // setc("my favorite picture");
+  // c();
+  // setimgs1("img/year/fav.jpeg");
+  // p1();
+  //
+  // await sleep(sleeptime);
+  // setc("I don't like this one but you do");
+  // c();
+  // setimgs1("img/year/us.jpeg");
+  // p1();
+  //
+  // await sleep(sleeptime);
   setc("getting ready for dance");
   c();
   setimgs3("img/year/dance1.jpeg", "img/year/dance2.jpeg", "img/year/dance3.jpeg");
@@ -172,23 +173,20 @@ async function main() {
   p2();
 
   sleeptime = (4000);
-  clearc();
-  clearp();
 
   await sleep(sleeptime);
+  clearc();
+  clearp();
   sett("Time flies when you're having fun ;)");
   t();
 
   await sleep(sleeptime);
-  sett("Happy one year anniversary ❤️");
-  t();
-
-  await sleep(sleeptime);
-  sett("Here's to the next!");
+  sett("Happy one year anniversary baby");
   t();
 
   await sleep(sleeptime);
   clicktoreplay();
+
 }
 
 //functions
