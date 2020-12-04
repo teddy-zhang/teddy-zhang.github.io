@@ -79,15 +79,15 @@ async function main() {
   t();
 
   await sleep(sleeptime);
-  sett("We've been dating\nfor a year");
-  t();
-
-  await sleep(sleeptime);
   sett("I really like you");
   t();
 
   await sleep(sleeptime);
-  sett("We've made a whole\nyear of memories...");
+  sett("We've been dating\nfor a year");
+  t();
+
+  await sleep(sleeptime);
+  sett("We've made\nlots of memories...");
   t();
 
   sleepttime = 3000;
