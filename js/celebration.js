@@ -11,12 +11,24 @@ var text = document.getElementById("text");
 var caption = document.getElementById("caption");
 var words = "Hi";
 var caps = "how it all started";
-//function to reset text opacity
+
+//setting/clearing text
 function sett(words) {
   text.style.display = "block";
   text.style.opacity = 0;
   text.innerHTML = words;
   this.words = words;
+  console.log(words);
+  var op = 0;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if (op >= 1) {
+      clearInterval(id);
+    } else {
+      op += speed;
+      text.style.opacity = op;
+    }
+  }
 }
 function cleart(){
   text.style.display = "none";
@@ -26,14 +38,20 @@ function setc(caps) {
   caption.style.opacity = 0;
   caption.innerHTML = caps;
   this.caps = caps;
+  console.log(caps);
+  var op = 0;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if (op >= 1) {
+      clearInterval(id);
+    } else {
+      op += speed;
+      caption.style.opacity = op;
+    }
+  }
 }
 function clearc(){
   caption.style.display = "none";
-}
-function clearp(){
-  imgs1.style.display = "none";
-  imgs2.style.display = "none";
-  imgs3.style.display = "none";
 }
 
 //functions for images
@@ -48,14 +66,48 @@ var imgs3x1 = document.getElementById("imgs3x1");
 var imgs3x2 = document.getElementById("imgs3x2");
 var imgs3x3 = document.getElementById("imgs3x3");
 
-var img1src = "img/year/walkingruby.jpeg";
-var img2src = "img/year/friendsoffelines.jpeg";
-var img3src = "img/year/walkingruby.jpeg";
+
+var urls = ["img/year/walkingruby.jpeg", "img/year/friendsoffelines.jpeg", //0-1
+            "img/year/fb1.jpeg", "img/year/fb2.jpeg", //2-3
+            "img/year/hoco.jpeg", //4
+            "img/year/dating.jpeg", //5
+            "img/year/braid.jpeg", //6
+            "img/year/nutcracker.jpeg", //7
+            "img/year/fav.jpeg", //8
+            "img/year/us.jpeg", //9
+            "img/year/driving.jpeg", //10
+            "img/year/dance1.jpeg", "img/year/dance2.jpeg", "img/year/dance3.jpeg", //11-13
+            "img/year/dance4.jpeg", "img/year/dance5.jpeg", "img/year/dance6.jpeg", //14-16
+            "img/year/dance7.jpeg", "img/year/dance8.jpeg", "img/year/dance9.jpeg", //17-19
+            "img/year/dance10.jpeg", "img/year/dance11.jpeg", //20-21
+            "img/year/hanging.jpeg", //22
+            "img/year/minnie1.jpeg", "img/year/minnie2.jpeg", "img/year/minnie3.jpeg", //23-25
+            "img/year/minnie4.jpeg", "img/year/minnie5.jpeg", "img/year/minnie6.jpeg",//26-28
+            "img/year/ruby1.jpeg"]  //29
+
+
+var img1src;
+var img2src;
+var img3src;
+
 function setimgs1(url1){
   img1src = url1;
   imgs1.style.opacity = 0;
   imgs2.style.display = "none";
   imgs3.style.display = "none";
+  console.log(img1src);
+  img1x1.src = img1src;
+  imgs1.style.display = "inline-block";
+  var op = 0;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if (op >= 1) {
+      clearInterval(id);
+    } else {
+      op += speed;
+      imgs1.style.opacity = op;
+    }
+  }
 }
 function setimgs2(url1, url2){
   img1src = url1;
@@ -63,6 +115,20 @@ function setimgs2(url1, url2){
   imgs1.style.display = "none";
   imgs2.style.opacity = 0;
   imgs3.style.display = "none";
+  console.log(img1src + " " + img2src);
+  img2x1.src = img1src;
+  img2x2.src = img2src;
+  imgs2.style.display = "inline-block";
+  var op = 0;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if (op >= 1) {
+      clearInterval(id);
+    } else {
+      op += speed;
+      imgs2.style.opacity = op;
+    }
+  }
 }
 function setimgs3(url1, url2, url3){
   img1src = url1;
@@ -71,188 +137,11 @@ function setimgs3(url1, url2, url3){
   imgs1.style.display = "none";
   imgs2.style.display = "none";
   imgs3.style.opacity = 0;
-}
-
-//driver function
-async function main() {
-  setc("Loading");
-  c();
-
-  img1x1.src = "img/year/braid.jpeg";
-  img1x1.src = "img/year/dance1.jpeg";
-  img1x1.src = "img/year/dance2.jpeg";
-  img1x1.src = "img/year/dance3.jpeg";
-  img1x1.src = "img/year/dance4.jpeg";
-  img1x1.src = "img/year/dance5.jpeg";
-  img1x1.src = "img/year/dance6.jpeg";
-  img1x1.src = "img/year/dance7.jpeg";
-  img1x1.src = "img/year/dance8.jpeg";
-  await sleep(1000);
-  setc("Loading.");
-  caption.style.opacity = 1;
-  caption.innerHTML = caps;
-  img1x1.src = "img/year/dance9.jpeg";
-  img1x1.src = "img/year/dance10.jpeg";
-  img1x1.src = "img/year/dance11.jpeg";
-  img1x1.src = "img/year/dating.jpeg";
-  img1x1.src = "img/year/driving.jpeg";
-  img1x1.src = "img/year/fav.jpeg";
-  img1x1.src = "img/year/fb1.jpeg";
-  img1x1.src = "img/year/fb2.jpeg";
-  img1x1.src = "img/year/friendsoffelines.jpeg";
-  await sleep(500);
-  setc("Loading..");
-  caption.style.opacity = 1;
-  caption.innerHTML = caps;
-  img1x1.src = "img/year/hanging.jpeg";
-  img1x1.src = "img/year/minnie1.jpeg";
-  img1x1.src = "img/year/minnie2.jpeg";
-  img1x1.src = "img/year/minnie3.jpeg";
-  img1x1.src = "img/year/minnie4.jpeg";
-  img1x1.src = "img/year/minnie5.jpeg";
-  img1x1.src = "img/year/nutcracker.jpeg";
-  img1x1.src = "img/year/us.jpeg";
-  img1x1.src = "img/year/hoco.jpeg";
-  await sleep(500);
-  setc("Loading...");
-  caption.style.opacity = 1;
-  caption.innerHTML = caps;
-  await sleep(2000);
-
-  clearc();
-
-  await sleep(1000);
-
-  sett("Hi");
-  t();
-
-  await sleep(sleeptime);
-  sett("I really like you");
-  t();
-
-  await sleep(sleeptime);
-  sett("We've been dating\nfor a year");
-  t();
-
-  await sleep(sleeptime);
-  sett("We've made\nlots of memories");
-  t();
-
-  await sleep(sleeptime);
-  sett("Thanks for a year of...");
-  t();
-
-  sleepttime = 3000;
-
-  await sleep(sleeptime);
-  cleart();
-  setc("of flirting");
-  c();
-  setimgs2("img/year/walkingruby.jpeg", "img/year/friendsoffelines.jpeg");
-  p2();
-
-  await sleep(sleeptime);
-  setc("of football games");
-  c();
-  setimgs2("img/year/fb1.jpeg", "img/year/fb2.jpeg");
-  p2();
-
-  await sleep(sleeptime);
-  setc("of homecoming");
-  c();
-  setimgs1("img/year/hoco.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  setc("of dating");
-  c();
-  setimgs1("img/year/dating.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  setc("of learning to braid");
-  c();
-  setimgs1("img/year/braid.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  setc("of nutcracker");
-  c();
-  setimgs1("img/year/nutcracker.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  setc("of my favorite picture");
-  c();
-  setimgs1("img/year/fav.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  setc("of my not favorite picture");
-  c();
-  setimgs1("img/year/us.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  setc("of driving around");
-  c();
-  setimgs1("img/year/driving.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  setc("of getting ready for dance");
-  c();
-  setimgs3("img/year/dance1.jpeg", "img/year/dance2.jpeg", "img/year/dance3.jpeg");
-  p3();
-  await sleep(sleeptime);
-  setimgs3("img/year/dance4.jpeg", "img/year/dance5.jpeg", "img/year/dance6.jpeg");
-  p3();
-  await sleep(sleeptime);
-  setimgs3("img/year/dance7.jpeg", "img/year/dance8.jpeg", "img/year/dance9.jpeg");
-  p3();
-  await sleep(sleeptime);
-  setimgs2("img/year/dance10.jpeg", "img/year/dance11.jpeg");
-  p2();
-
-  await sleep(sleeptime);
-  setc("of hanging out");
-  c();
-  setimgs1("img/year/hanging.jpeg");
-  p1();
-
-
-  await sleep(sleeptime);
-  setc("of Minnie");
-  c();
-  setimgs3("img/year/minnie1.jpeg", "img/year/minnie2.jpeg", "img/year/minnie3.jpeg");
-  p3();
-  await sleep(sleeptime);
-  setimgs2("img/year/minnie4.jpeg", "img/year/minnie5.jpeg");
-  p2();
-
-  await sleep(sleeptime);
-  setc("of Ruby, of course");
-  c();
-  setimgs1("img/year/ruby1.jpeg");
-  p1();
-
-  await sleep(sleeptime);
-  clearc();
-  clearp();
-
-  await sleep(2000);
-  sett("Happy one year anniversary");
-  t();
-
-  await sleep(2000);
-  date();
-
-}
-
-//functions
-
-function t(){
-  console.log(words);
+  console.log(img1src + " " + img2src + " " + img3src);
+  img3x1.src = img1src;
+  img3x2.src = img2src;
+  img3x3.src = img3src;
+  imgs3.style.display = "inline-block";
   var op = 0;
   var id = setInterval(frame, 1);
   function frame() {
@@ -260,77 +149,28 @@ function t(){
       clearInterval(id);
     } else {
       op += speed;
-      text.style.opacity = op;
+      imgs3.style.opacity = op;
     }
   }
 }
-
-function c(){
-    console.log(caps);
-    // caption.style.opacity = 1;
-    var op = 0;
-    var id = setInterval(frame, 1);
-    function frame() {
-      if (op >= 1) {
-        clearInterval(id);
-      } else {
-        op += speed;
-        caption.style.opacity = op;
-      }
-    }
+function clearp(){
+  imgs1.style.display = "none";
+  imgs2.style.display = "none";
+  imgs3.style.display = "none";
+}
+function loadimgs(load){
+  caption.style.display = "block";
+  caption.style.opacity = 0;
+  caption.innerHTML = load;
+  this.caps = load;
 }
 
-function p1(){
-    console.log(img1src);
-    img1x1.src = img1src;
-    imgs1.style.display = "inline-block";
-    var op = 0;
-    var id = setInterval(frame, 1);
-    function frame() {
-      if (op >= 1) {
-        clearInterval(id);
-      } else {
-        op += speed;
-        imgs1.style.opacity = op;
-      }
-    }
-}
 
-function p2(){
-    console.log(img1src + " " + img2src);
-    img2x1.src = img1src;
-    img2x2.src = img2src;
-    imgs2.style.display = "inline-block";
-    var op = 0;
-    var id = setInterval(frame, 1);
-    function frame() {
-      if (op >= 1) {
-        clearInterval(id);
-      } else {
-        op += speed;
-        imgs2.style.opacity = op;
-      }
-    }
-}
 
-function p3(){
-    console.log(img1src + " " + img2src + " " + img3src);
-    img3x1.src = img1src;
-    img3x2.src = img2src;
-    img3x3.src = img3src;
-    imgs3.style.display = "inline-block";
-    var op = 0;
-    var id = setInterval(frame, 1);
-    function frame() {
-      if (op >= 1) {
-        clearInterval(id);
-      } else {
-        op += speed;
-        imgs3.style.opacity = op;
-      }
-    }
-}
 
+
+
+//for tbe final date at te end
 function date(){
   console.log("date");
   var date = document.getElementById("date");
@@ -345,4 +185,137 @@ function date(){
       date.style.opacity = op;
     }
   }
+}
+
+
+
+
+
+
+
+
+
+//driver function
+async function main() {
+
+  setc("Loading");
+  for (var i = 29; i > 19; i--){
+    img1x1.src = urls[i];
+    console.log("loaded img" + i  + ": " + urls[i]);
+  }
+  await sleep(1000);
+  loadimgs("Loading.");
+  caption.style.opacity = 1;
+  caption.innerHTML = caps;
+  for (var i = 19; i > 9; i--){
+    img1x1.src = urls[i];
+    console.log("loaded img" + i  + ": " + urls[i]);
+  }
+  await sleep(500);
+  loadimgs("Loading..");
+  caption.style.opacity = 1;
+  caption.innerHTML = caps;
+  for (var i = 9; i > -1; i--){
+    img1x1.src = urls[i];
+    console.log("loaded img" + i  + ": " + urls[i]);
+  }
+  await sleep(500);
+  loadimgs("Loading...");
+  caption.style.opacity = 1;
+  caption.innerHTML = caps;
+  await sleep(2000);
+
+  clearc();
+
+  await sleep(1000);
+
+  sett("Hi");
+
+  await sleep(sleeptime);
+  sett("I really like you");
+
+  await sleep(sleeptime);
+  sett("We've been dating\nfor a year");
+
+  await sleep(sleeptime);
+  sett("We've made\nlots of memories");
+
+  await sleep(sleeptime);
+  cleart();
+  await sleep(2000);
+  sett("Thanks for a year of...");
+
+  sleepttime = 3000;
+
+  await sleep(sleeptime);
+  cleart();
+  setc("of flirting");
+  setimgs2(urls[0], urls[1]);
+
+  await sleep(sleeptime);
+  setc("of football games");
+  setimgs2(urls[2], urls[3]);
+
+  await sleep(sleeptime);
+  setc("of homecoming");
+  setimgs1(urls[4]);
+
+  await sleep(sleeptime);
+  setc("of dating");
+  setimgs1(urls[5]);
+
+  await sleep(sleeptime);
+  setc("of learning to braid");
+  setimgs1(urls[6]);
+
+  await sleep(sleeptime);
+  setc("of nutcracker");
+  setimgs1(urls[7]);
+
+  await sleep(sleeptime);
+  setc("of my favorite picture");
+  setimgs1(urls[8]);
+
+  await sleep(sleeptime);
+  setc("of my not favorite picture");
+  setimgs1(urls[9]);
+
+  await sleep(sleeptime);
+  setc("of driving around");
+  setimgs1(urls[10]);
+
+  await sleep(sleeptime);
+  setc("of getting ready for dance");
+  setimgs3(urls[11], urls[12], urls[13]);
+  await sleep(sleeptime);
+  setimgs3(urls[14], urls[15], urls[16]);
+  await sleep(sleeptime);
+  setimgs3(urls[17], urls[18], urls[19]);
+  await sleep(sleeptime);
+  setimgs2(urls[20], urls[21]);
+
+  await sleep(sleeptime);
+  setc("of hanging out");
+  setimgs1(urls[22]);
+
+  await sleep(sleeptime);
+  setc("of Minnie");
+  setimgs3(urls[23], urls[24], urls[25]);
+  await sleep(sleeptime);
+  setimgs3(urls[26], urls[27], urls[28]);
+
+  await sleep(sleeptime);
+  setc("of Ruby, of course");
+  setimgs1(urls[29]);
+
+  await sleep(sleeptime);
+  clearc();
+  clearp();
+
+  await sleep(2000);
+  sett("Happy one year anniversary");
+
+  await sleep(2000);
+  date();
+
 }
